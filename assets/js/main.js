@@ -128,7 +128,7 @@
         '<div>' +
           '<div class="disp loop-title">' + esc(l.title) + '</div>' +
           '<div class="loop-meta">' + esc(l.bpm) + ' BPM · ' + esc(l.key) + '</div>' +
-          '<div class="loop-instr">' + esc(l.instr) + '</div>' +
+          (l.instr ? '<div class="loop-instr">' + esc(l.instr) + '</div>' : '') +
         '</div>' +
         '<div class="loop-foot">' +
           '<button class="loop-play" aria-label="Play ' + esc(l.title) + '">' + icons(14) + '</button>' +
