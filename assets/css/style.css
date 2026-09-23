@@ -863,7 +863,9 @@ input, select, textarea, button { font-family: inherit; }
   overflow-x: auto;
   padding: 4px 2px 22px;
 }
-.fpill {
+/* .fpill filters the beat list, .lpill the loop grid — same look */
+.fpill,
+.lpill {
   flex: 0 0 auto;
   padding: 9px 18px;
   border-radius: 999px;
@@ -877,7 +879,8 @@ input, select, textarea, button { font-family: inherit; }
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.fpill.is-on { background: var(--text); border-color: var(--text); color: var(--bg); }
+.fpill.is-on,
+.lpill.is-on { background: var(--text); border-color: var(--text); color: var(--bg); }
 
 /* track list */
 

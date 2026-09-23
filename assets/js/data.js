@@ -71,6 +71,7 @@ window.MIKEB = (function () {
     ['ASHTRAY', '132', 'G min', 'DARK TRAP', GRAY, 'dark-trap', 'Detuned bells'],
     ['SILK DOOR', '96', 'A min', 'ATMO RNB', SKY, 'atmo-rnb', 'Pads · vox chop'],
     ['WATER LIGHT', '104', 'E min', 'ATMO RNB', SKY, 'atmo-rnb', 'Ambient keys'],
+    ['DO U LIKE IT', '110', 'G min', 'RNB', PINK, 'rnb', ''],
     ['SLOW BURN', '88', 'D min', 'RNB', PINK, 'rnb', 'Rhodes · bass'],
     ['SUNDAY MORNING', '90', 'G min', 'RNB', PINK, 'rnb', 'Soul chops'],
     ['ENDZ', '142', 'B min', 'DRILL', INDIGO, 'drill', 'Sliding bass · gtr'],
