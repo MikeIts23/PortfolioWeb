@@ -18,12 +18,14 @@ If either fails to load, the site still renders and works.
 ## Local preview
 
 ```bash
-python3 -m http.server 8000
+npx http-server -c-1 -p 8000
 # → http://localhost:8000
 ```
 
-A plain `file://` open mostly works too, but a local server keeps relative paths
-and audio behaving the way they do in production.
+Use a server that supports HTTP range requests, as `http-server` and GitHub
+Pages do. Without them the browser cannot seek inside an audio file, so clicking
+the progress bar jumps back to 0:00. `python3 -m http.server` does not support
+range requests: fine for checking layout, not for testing the player.
 
 ## Layout
 

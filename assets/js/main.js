@@ -297,7 +297,9 @@
       var a = makeAudio(d.src, d.fallback);
       a.addEventListener('ended', function () {
         setIcons(false); setBars(false); setEq(row, false);
-        np.fill.style.width = '0%';
+        // Rewind rather than only zeroing the bar: tick() redraws the fill
+        // from currentTime every frame and would put it straight back at 100%.
+        a.currentTime = 0;
       });
       a.addEventListener('loadedmetadata', function () {
         var dur = $('.t-dur', row);
